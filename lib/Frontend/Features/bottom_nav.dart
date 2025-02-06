@@ -36,7 +36,7 @@ class _NavBarState extends State<NavBar> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 25,
-        selectedItemColor: Colors.,
+        // selectedItemColor: Colors.,
         // unselectedItemColor: Color(##666666),
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
