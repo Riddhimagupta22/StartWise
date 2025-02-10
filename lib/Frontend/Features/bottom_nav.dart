@@ -1,9 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:venture_hub/Frontend/Screens/home_screen.dart';
-import 'package:venture_hub/Frontend/Screens/notification_page.dart';
+import 'package:venture_hub/Frontend/Screens/event_page.dart';
+import 'package:venture_hub/Frontend/Screens/Dashboard/home_screen.dart';
+import 'package:venture_hub/Frontend/Screens/explore_page.dart';
 import 'package:venture_hub/Frontend/Screens/profile_page.dart';
-import 'package:venture_hub/Frontend/Screens/search_page.dart';
+import 'package:venture_hub/Frontend/Screens/chat_page.dart';
 
 class NavBar extends StatefulWidget {
   NavBar();
@@ -29,15 +30,17 @@ class _NavBarState extends State<NavBar> {
         },
         children: [
           HomeScreen(),
-          SearchPage(),
-          NotificationPage(),
+          ExplorePage(),
+          ChatPage(),
+          EventPage(),
           ProfilePage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 25,
-        // selectedItemColor: Colors.,
-        // unselectedItemColor: Color(##666666),
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Color(0xff9ba2ae
+        ),
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         onTap: (index) {
@@ -52,16 +55,20 @@ class _NavBarState extends State<NavBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search_rounded),
-            label: 'Search',
+            icon: Icon(Icons.explore_rounded),
+            label: 'Explore',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
+            icon: Icon(Icons.chat),
+            label: 'Chat',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.calendar_today),
+            label: 'Events',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
         ],
       ),

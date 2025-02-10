@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Frontend/Features/bottom_nav.dart';
-import 'Frontend/Screens/home_screen.dart';
+import 'Frontend/Screens/Dashboard/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
