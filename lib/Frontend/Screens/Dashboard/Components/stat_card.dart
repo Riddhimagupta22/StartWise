@@ -8,7 +8,9 @@ class StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(child: Card(elevation: 4
+    return Expanded(
+        child:
+        Card(elevation: 4
       ,shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
     ),
