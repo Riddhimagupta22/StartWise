@@ -14,6 +14,7 @@ class StatCard extends StatelessWidget {
       ,shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
     ),
+    // cards
     child: Column(
       children: [
         Text(title,style: TextStyle(fontSize: 16),),
